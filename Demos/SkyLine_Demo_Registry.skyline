@@ -1,0 +1,23 @@
+!-
+
+Registry is a concept in skyline to register standard library functions.
+
+You can think of this as importing data from files but instead of importing 
+
+data it rather just registers it into the environment. This works quite similar 
+
+but also has a different set of functions and work arounds. Currently registering 
+
+works pretty simply. Call register followed by parentheses to encapsulate the library
+
+-!
+
+// register math | All functions and variables
+register("math")
+
+// generate a random value
+set val := math.rand();
+
+// print the value
+println(val)
+

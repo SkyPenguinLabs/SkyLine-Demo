@@ -1,0 +1,35 @@
+// Io has a listener on it that will start on a seperate thread 
+// this listener will listen for specific events on the input stream 
+// or within the OS 
+// these events will pend on the action
+
+register("io")
+
+set message := "\n [+] CTRL+C DETECTED : EXITING \n \n \n ";
+
+io.listen(
+    "ctrl-c",
+    message
+);
+
+// right now io.listen is only a concept and can be used in specific cases 
+// in this current testing state the listener will create a controller to 
+// exit upon listening.
+
+set x := true;
+
+for (x) {
+    println("listener....")
+};
+
+/*
+
+Note: Strings have quite an issue right now where control characters such as 
+
+new lines are not really allowed at the end of a string. This is A MAJOR ISSUE 
+
+and needs to be fixed instantly or needs to be ignored. It would also be good 
+
+to fix what strings can and can not contain. 
+
+*/

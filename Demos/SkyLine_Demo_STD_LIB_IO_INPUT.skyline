@@ -1,0 +1,29 @@
+// input field using IO 
+/*
+
+Input is one of the more different functions within IO. Instead of checking 
+for input each time someone presses enter, we allow for multiple forms,
+multiple prompts and the expected/resulting data type. The data type helps you
+ensure the input you are getting is what is needed and is correct.
+
+The data types allowed are 
+        : Integer 
+        : String
+        : Float
+
+The n stands for new line. When the input will be returned. Currently the reader only 
+
+supports n which is a new line
+
+
+*/
+
+register("io")
+
+set InputController := io.input(
+    "What is your name> ",
+    "String",
+    "n"
+);
+
+println("Hello " + InputController)

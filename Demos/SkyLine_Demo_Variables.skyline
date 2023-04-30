@@ -1,0 +1,57 @@
+// Variables can be defined using the following keywords 
+//
+// let, set, cause
+//
+// RULES: 
+//      at the end of every variable assignment must be a semicolon
+//    
+// 
+//
+
+set name = 10;
+cause data = true;
+let newdata = "str";
+
+println(name, data, newdata)
+
+!-
+
+String type variables
+        - Operator list:
+                +
+                !=
+                >=
+                <=
+                ==
+                --
+                *=
+    
++     : Adds strings together
+!=    : Boolean NOT EQUAL
+>=    : Boolean Greater than or equal to
+<=    : Boolean less   than or equal to
+--    : Takes away a single value in a string                
+==    : Boolean Equals equals
+
+
+*=    : This is confusing for people and will be, this might even be removed because 
+        right now it is pretty pointless. This will repeat the string based on the length 
+        of the right string value. For example 
+
+        string(data) *= "aaaa"
+
+        will repeat the term    .    data    . 4 times because the length 
+        of the right value is 4
+-!
+
+newdata = newdata + " secondary_str";
+
+if (newdata != "str") {
+    newdata *= "aaa";
+    println(newdata)
+};
+
+newdata = newdata--;
+
+println(newdata)
+

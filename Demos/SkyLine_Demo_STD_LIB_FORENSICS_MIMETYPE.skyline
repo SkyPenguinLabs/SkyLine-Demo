@@ -1,0 +1,20 @@
+!-
+
+SkyLine's prime goal is to ensure that developers have an insane 
+amount of access to new and modern features. One prime aspect of 
+skyline right now is how heavily worked on its forensics library 
+is. In this case and demo we have a file that needs to be recongnized 
+so we will use the standard library to fetch the signature of a unknown 
+file.
+
+-!
+
+register("forensics/Sub")
+
+// replace file directory with your file
+println(
+    "File is -> " +
+    ForensicsUtils.FindSigUnknownFile(
+    "/home/totallynotahaxxer/Desktop/SL/Demos/DemoFiles/unknownfile"
+    ) 
+)

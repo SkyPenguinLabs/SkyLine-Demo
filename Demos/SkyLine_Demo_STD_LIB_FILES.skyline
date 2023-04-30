@@ -1,0 +1,47 @@
+/*
+
+Working with files is quite easy in SkyLine. Right now there are not nearly enough methods, however you can do basic operations such as
+
+reading, opening, writing and calling files. 
+
+*/
+
+register("file")
+register("io")
+
+io.clear()
+
+file.New(
+    "/home/totallynotahaxxer/Desktop/SL/Demos/DemoFiles/DemoStdLibFile.txt"
+);
+
+set counter := 0;
+
+println("[+] File data [+] ")
+println("------------------")
+
+foreach data in file.Open().Split(" ") {
+    counter++
+    println("[ " + sprint(counter) + " ] " + data) 
+};
+
+
+// you can also write to files using file.Write()
+
+file.Write("hello world!");
+
+println(
+    " \n : Data has been written to the file : \n "
+);
+
+println(file.Open())
+
+// Or instead of writing individually you can write to the entire file 
+// with just one payload. This will overwrite any current data 
+// and replace the data within the file to the new data as an argument 
+file.Overwrite("New Data replaced")
+
+println("[-] Data over written in file [-]")
+
+
+println(io.box(file.Open()))

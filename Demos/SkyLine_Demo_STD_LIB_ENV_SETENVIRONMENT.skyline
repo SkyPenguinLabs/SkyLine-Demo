@@ -1,0 +1,25 @@
+// the environment allows you to do multiple things 
+// and will be worked on much more in the future.
+// for now the environment is limited to 
+//
+// ENV.set 
+// ENV.get
+// ENV.environment 
+//
+// this demo uses env.get
+
+register("env")
+
+set originalname := env.Getenv("USERNAME");
+
+env.Setenv("USERNAME", "hellothere!");
+
+set username := env.Getenv("USERNAME");
+
+println("modified username -> " + username + "!");
+
+env.Setenv("USERNAME", originalname);
+
+set username := env.Getenv("USERNAME");
+
+println(username)

@@ -1,0 +1,9 @@
+!-
+
+Integers currently are supported but have no standard registered invoke methods
+
+-!
+
+set age = 10;
+
+println(age)

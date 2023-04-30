@@ -1,0 +1,4 @@
+register("math")
+
+
+math.abs(200)

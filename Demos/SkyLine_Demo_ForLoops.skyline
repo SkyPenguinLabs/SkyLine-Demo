@@ -1,0 +1,17 @@
+!-
+
+For loops like most programming languages are loops based on conditionals
+
+for (...) {}
+
+
+pretty simple to understand
+-!
+
+for (x == true) {
+    println("x is true")
+    x--;
+    // setting x to false with postfix '--'
+};
+
+

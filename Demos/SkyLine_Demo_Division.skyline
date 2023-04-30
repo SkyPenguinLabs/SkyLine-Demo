@@ -1,0 +1,5 @@
+// Division operations are performed with /
+
+set op := (10 / 5);
+
+op

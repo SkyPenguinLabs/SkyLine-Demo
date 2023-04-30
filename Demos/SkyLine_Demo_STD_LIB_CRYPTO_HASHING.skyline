@@ -1,0 +1,19 @@
+// the most basic hashing function exists within skyline 
+// and it is really just the most simple thing in the world 
+// md5, sha512, sha256, and sha1 are the only supported hashes 
+// see- simple 
+
+register("crypt")
+
+set hashdata := "hashabledata";
+
+set Newarr := [];
+
+Newarr.Append(crypt.hash("md5", hashdata))
+Newarr.Append(crypt.hash("sha1", hashdata))
+Newarr.Append(crypt.hash("sha256", hashdata))
+Newarr.Append(crypt.hash("sha512", hashdata))
+
+foreach elem in Newarr {
+    println("[hash] " + elem)
+};

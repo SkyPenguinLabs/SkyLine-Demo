@@ -1,0 +1,8 @@
+// Addition is kept standard with +
+
+set res := (10 + 10);
+
+println(res);
+
+100 + 20
+

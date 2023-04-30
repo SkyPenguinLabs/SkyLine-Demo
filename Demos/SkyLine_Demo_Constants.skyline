@@ -1,0 +1,13 @@
+!-
+
+Constants are easy to understand, simply use const or constant keywords 
+
+to declare a constant
+
+-!
+
+const name = "Ryan";
+constant x = 10;
+constant v = 20.4;
+
+println(name)

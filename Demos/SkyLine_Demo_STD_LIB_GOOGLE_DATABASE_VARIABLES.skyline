@@ -1,0 +1,40 @@
+/*
+
+Like the Roku database, each IoT device that is researched or implemented by the development team has its own database filled 
+
+with API endpoints, calls, codes, variables, files, expected binary signatures, responses and more. This allows the developers 
+
+of various frameworks and applications to easily work with the API endpoints. In the case the API endpoint changes, it is easily 
+
+updated.
+
+In this case, google cast devices and home devices have their own API variables here.
+
+
+The variables for this database come down to 
+
+Google.CastDeviceInfo
+Google.CastDeviceReboot
+Google.CastDeviceDescription
+Google.CastDeviceWiFiForget
+Google.CastDeviceWiFiScan
+Google.CastDeviceWiFiScanResults
+Google.CastDeviceWiFiConfigured
+Google.CastDeviceAlarms
+Google.CastDeviceTimezones
+Google.CastDeviceLegacyConf
+Google.CastDeviceBleStat
+Google.CastDeviceBlePaired
+Google.CastDeviceSetName
+Google.CastDeviceApplications
+
+-- both amazon and apple files all contain similar information but change for response codes and services
+*/
+
+
+register("IoT/Google/Database")
+
+set x := Google.CastDeviceInfo;
+
+println(x);
+

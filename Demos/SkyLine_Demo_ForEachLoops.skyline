@@ -1,0 +1,24 @@
+!-
+
+In order to better work with Arrays within SkyLine you can use a for each loop
+
+within a returning value. In this demo, we use a for each loop to print out 
+
+each of the values from a String.split function called as an invoke method
+
+-!
+
+set Name = "developer - jef";
+
+foreach value in Name.Split("") {
+    println(value);
+};
+
+// In this case the argument to Split is where or how to cut the string 
+// or value. In this case we split for nil which results in splitting 
+// everything into that string. A better example is shown below with commas
+set Values = "1,2,3,4,5,6,7";
+
+foreach v in Values.Split(",") {
+    println(v) 
+};

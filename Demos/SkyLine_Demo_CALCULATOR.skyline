@@ -1,0 +1,34 @@
+
+set Sub := Func(x, y) {
+    return x - y;
+};
+
+set Div := Func(x, y) {
+    return x / y;
+};
+
+set Mul := Func(x, y) {
+    return y * y;
+};
+
+set Add := Func(x, y) {
+    return x + y;
+};
+
+set Ops = {
+    "-": Sub,
+    "+": Add,
+    "/": Div,
+    "*": Mul,
+};
+
+
+set Main = function() {
+    register("io")
+    set x = 10;
+    set y = 20;
+    set operation = io.input("Operation (-,+,/,*)>> ", "String", "n");
+    return Ops[operation](x, y)
+};
+
+Main()

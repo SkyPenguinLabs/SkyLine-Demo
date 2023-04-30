@@ -1,0 +1,23 @@
+!-
+
+Importing files in SkyLine is pretty simple to understand.
+
+Instead of allowing you to just import everything, skyline allows you to 
+
+import values if they are capitalized or start with a capital letter.
+
+This means any value that has 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' will be exported
+
+but anything lower case will not be supported or will not be exported.
+
+-!
+
+
+// you import data from a file using the import keyword assigned to a variable 
+
+set Lib := import("SkyLine_Demo_ImportFileForImportDemo2.skyline");
+
+// you call data or functions using ::
+
+println(Lib::ImportedFunction(2))
+

@@ -1,0 +1,22 @@
+set TrueValue := BOOLEANT;
+
+set FalseValue := BOOLEANF;
+
+/*
+
+SkyLine has support for boolean values but instead of using 
+
+true or false in other cases you can use BOOLT and BOOLF 
+
+BOOLEANF = Boolean false
+BOOLEANT = Boolean true
+
+*/
+
+if (TrueValue) {
+    println("A is true!") 
+};
+
+if (!FalseValue) {
+    println("B is false!")
+};

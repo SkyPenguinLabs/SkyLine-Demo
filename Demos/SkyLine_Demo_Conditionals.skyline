@@ -1,0 +1,43 @@
+!-
+
+    Conditional statements are pretty easy to understand in skyline. Multiple 
+    forms are allowed to be worked around such as else, else if, else blocks 
+    like any other language. Chains must end with a semicolon while regular
+    conditionals alone also have to do the same thing. A chain of conditionals
+    looks like this 
+
+    if {
+
+    } else {
+
+    };
+
+    you put the semicolon AT THE END OF THE CHAIN 
+
+    but in a singular conditional it falls the same 
+
+    if { 
+
+    };
+
+    when it comes to conditionals in SkyLine, you must use parenthesis to 
+    work with the condition.
+
+    if (...) {...}
+
+    WARN: CONDITIONALS DO NOT HAVE ELSE IF YET
+
+-!
+
+// single condition
+set x = true;
+if (x) {
+    println(sprint(x) + " is true ");
+};
+
+// if else 
+if (!x) {
+    println("x is not true");
+} else {
+    println("x is true");
+}

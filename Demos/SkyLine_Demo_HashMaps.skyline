@@ -1,0 +1,27 @@
+!-
+
+Hash maps allow you to do so many things in programming languages, they are also 
+
+extremely easy to use and extremely usefull! In SkyLine there is a easy way to work 
+
+with hash maps and all it really takes is creating a block statement.
+
+-!
+
+{
+    "hello" : "world",
+}["hello"]
+
+// you can also use multiple data types like so 
+
+set x = {
+    "str": Func(arg) { return arg },
+    "data": 1.5,
+    "data2": 1,
+    true: false,
+    false: true,
+};
+
+x["str"]("hello world").Trim("");
+x["data"]
+x["data2"]

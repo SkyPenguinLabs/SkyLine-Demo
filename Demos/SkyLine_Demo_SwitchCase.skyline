@@ -1,0 +1,27 @@
+/*
+
+    Switch case statements are pretty interesting in skyline. Because skyline 
+    does not rely on whitespace for anything, case, default and switch statements
+    all rely on brackets. an example is shown below to check the name of someone
+
+*/
+
+constant name = "jef";
+
+switch(name) {
+    case "jef" {
+        println("Hello there! Welcome back :D")
+    }
+    case "r" {
+        println("hey there! Welcome back ")
+    } 
+    default {
+        println("ahhhh welcome back!")
+    }
+};
+
+/*
+    Switch case statements can have a case of any data type because 
+    the switch statement allows for much more flexability when it comes 
+    to data manipulation.
+*/

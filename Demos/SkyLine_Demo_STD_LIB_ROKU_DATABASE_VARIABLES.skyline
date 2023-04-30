@@ -1,0 +1,52 @@
+!-
+
+Ah yes, this confusion. In SkyLine the original plan to demo the language 
+
+was to rewrite a framework known as caster which was developed to abuse API 
+
+endpoints and then manipulate IoT devices by abusing those endpoints. Caster 
+
+used research that was conducted by the developer of the project on the systems
+
+protocols, files, responses from servers and much more to create that project.
+
+To compensate for the rewrite of that, I decided to create an IoT path and library 
+
+which will be dedicated to IoT security research. One of the prime aspects of this 
+
+will be the core features of the devices and brands under their IoT devices following 
+
+their databases. This means that any server response code, or message from a server like 
+
+AirPlay will be stored in the Apple/Database path, in this case roku has its own set of codes 
+
+files, urls, ports etc that are stored in this library. This program will represent 
+
+making a GET request to the info URL on a roku device.
+
+-!
+
+// register the roku library 
+register("IoT/Roku/Database")
+register("http")
+register("io")
+
+constant InfoURL := Roku.DeviceInformation;
+"IoT/Roku/Database".UnlinkRegistry();
+set Target := sprintf(InfoURL, "10.0.0.59");
+
+set Response := http.Get(Target);
+
+"http".UnlinkRegistry();
+
+
+if (Response["StatusCode"].Integer() == 200) {
+    println("[+] Device info sucess ")
+    println("------------------------")
+    println(io.box(Response["ResponseBody"]))
+    println(Response["ResponseBody"])
+};
+
+"io".UnlinkRegistry();
+
+// the result of this program looks like 

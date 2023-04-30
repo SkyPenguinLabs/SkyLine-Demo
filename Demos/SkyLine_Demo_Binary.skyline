@@ -1,0 +1,4 @@
+// binary data is stored in a singular variable like so 
+
+set x = 10110b;
+println(x)

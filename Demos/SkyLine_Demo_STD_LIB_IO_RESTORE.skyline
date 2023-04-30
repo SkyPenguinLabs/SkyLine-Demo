@@ -1,0 +1,5 @@
+register("io")
+
+// IO.restore will restore the output color to 033[39m
+// this helps during repl for development
+io.restore()

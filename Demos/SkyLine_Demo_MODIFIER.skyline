@@ -1,0 +1,40 @@
+!-
+
+Modifiers are a bit of a rough concept to explain. They can be easily compared 
+
+to a simple #pragma statement in a C++ program. In this case, the modify keyword
+
+is a keyword that allows you to modify internal systems of SkyLine such as the error system 
+
+the parser errors
+
+the code system 
+
+the frontend system
+
+import system 
+
+and other various systems within SkyLine
+
+currently, modify has not been worked on because the SLC-E ( SkyLine Configuration Engine)
+
+was built to automate the modify statement
+
+
+
+Modify works in multiple ways, when calling modify the values are split 
+
+with a colon. This means the left side of the colon is the system and the right 
+
+side of the colon is the thing you want to modify. This again becomes much easier 
+
+when using SLC-E.
+
+-!
+
+// in this demo we will modify the error system 
+// which is not a fully implemented system yet
+modify("errors:verbose")
+
+// cause error
+constant x = 10

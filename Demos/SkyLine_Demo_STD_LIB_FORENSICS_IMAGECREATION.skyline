@@ -1,0 +1,40 @@
+!-
+
+With skyline's forensics module, you can also create images 
+
+that are quite minimal in both jpg, png, bmp and gif file formats.
+
+This will help during specific processes or programs.
+
+
+in order to create an image you need to run two functions which
+come from the image utility path and library. One is a New 
+method which will load the name of the file, pixel height and width
+then the creation function which will create the file and return a value
+-!
+
+register("forensics/Sub")
+register("forensics/Utils")
+
+// setup constants
+constant outputpath  = "/home/totallynotahaxxer/Desktop/SL/Demos/DemoFiles/CreatedImage";
+constant PixelWidth  = "100";
+constant PixelHeight = "200";
+
+// call new function
+ImageUtils.CreationNew(
+    outputpath,
+    PixelWidth,
+    PixelHeight
+);
+
+// Call create function
+// supported formats | jpg, png, gif, bmp
+ImageUtils.CreateImage("gif")
+
+// replace file directory with your file
+if (ForensicsUtils.FindSigUnknownFile(outputpath) == "GIF") {
+    println("[+] File -> " + outputpath + " exists!")
+    println("[+] MIME -> GIF")  
+};
+

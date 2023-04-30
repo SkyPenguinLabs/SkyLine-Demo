@@ -1,0 +1,9 @@
+// This is the file which will bne used for 
+// SkyLine_Demo_Importing.skyline 
+
+set ImportedFunction = Func(x) {
+    return x + 1;
+};
+
+set nonimported := true; 
+

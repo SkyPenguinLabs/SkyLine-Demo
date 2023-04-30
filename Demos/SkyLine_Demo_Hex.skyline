@@ -1,0 +1,11 @@
+!-
+
+Like most programming languages SkyLine also has support for hex code
+
+hex code can be used for multiple things and it is one of the prime features 
+
+-!
+
+set x := 0x23423423d;
+
+println(x)

@@ -1,0 +1,26 @@
+!-
+
+    This is a multi line comment in skyline
+
+-!
+
+
+/*
+
+        This is also a multi line comment in skyline
+
+
+NOTE: Empty files should not exist within skyline even with notes
+
+
+WARNING: Notes are very dangerous in SkyLine not for the saftey of the program 
+
+but as of the experimental version of SkyLine which is 0-0-5 or any version below 
+
+1-0-0 Notes will cause programs to crash and will cause them to panic or will cause the 
+
+error system to go quite crazy So it is important that you stay away from notes
+
+*/
+
+

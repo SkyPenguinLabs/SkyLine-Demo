@@ -1,0 +1,38 @@
+/*
+
+SkyLine as a programming language is focused on many topics mostly revolving around specific 
+
+cyber related tasks. However, while also creating programs, sometimes it is nice to automate 
+
+the frontend side of the program you are developing. This is a good demo for what is coming up. 
+
+This file will demo the box function apart of the IO library which will draw a box around specific content.
+
+
+the box has a standard set of characters it uses all apart of the box drawing characters or set, however you can 
+
+replace it with your own if you would like.
+
+*/
+
+register("io")
+
+constant TopLeftBoxChar = "┏";
+constant TopRightBoxChar = "┓";
+constant BottomLeftBoxChar = "┗";
+constant BottomRightBoxChar = "┛";
+constant HorizonBoxChar = "━";
+constant VerticleBoxChar = "┃";
+
+set InputText = "Draw around this neat text";
+
+io.box(
+    InputText,
+    TopLeftBoxChar,
+    TopRightBoxChar,
+    BottomLeftBoxChar,
+    BottomRightBoxChar,
+    HorizonBoxChar,
+    VerticleBoxChar
+);
+

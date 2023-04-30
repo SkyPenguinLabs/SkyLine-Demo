@@ -1,0 +1,25 @@
+/*
+
+With registering libraries, one problem the developer found quite annoying as a 
+
+genuine problem when working with standard libraries was to take them away and not use them.
+
+Sometimes when working in development or bigger frameworks, you only want to import a file for one 
+
+reason and one reason only. SkyLine will allow you to unlink a libraries functions from the environment 
+
+after using them which will decrease bloat. 
+
+*/
+
+// in this example we register the standard library  IO 
+// and then use the clear function followed by an unlink call
+
+register("io")
+
+io.clear()
+
+// Unlink all functions and variables attached to that library
+"io".UnlinkRegistry();
+// Unlink will also return true or false if the library was unlinked with success
+

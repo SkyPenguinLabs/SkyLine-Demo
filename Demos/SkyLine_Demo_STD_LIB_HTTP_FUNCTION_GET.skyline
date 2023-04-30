@@ -1,0 +1,15 @@
+// simple get requests are supported in testing 
+// GET requests will get about everything from the hostname 
+// and throw everything onto a map.
+
+register("http")
+register("IoT/Roku/Database")
+
+constant InfoURL := Roku.DeviceInformation;
+set Target := sprintf(InfoURL, "10.0.0.59");
+
+set res := http.Get(Target);
+
+foreach x in res {
+    println(x + "    :    " + res[x])
+};

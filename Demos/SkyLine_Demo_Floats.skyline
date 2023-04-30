@@ -1,0 +1,17 @@
+!-
+
+One of the major data types within programming languages are numerical based 
+
+data types. SkyLine allows support for float values like any other language.
+
+all you need to do to define a float is adding a '.' symbol after the number 
+
+followed by another number.
+
+
+methods do not exist for float objects yet
+-! 
+
+set x = 10.0;
+
+println(x)

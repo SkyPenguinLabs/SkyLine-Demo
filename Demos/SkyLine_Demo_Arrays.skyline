@@ -1,0 +1,65 @@
+!-
+
+
+SkyLine has a different take on arrays 
+
+and it also supports many implementations.
+
+because everything in SkyLine is an object and it is a dynamically 
+
+typed programming language, skyline allows so much more flexibility 
+
+when it comes to using and creating arrays!
+
+-!
+
+set NewArray = [
+    "data",
+    1,
+    1.5,
+    true, 
+    false,
+    Func() { return 10 + 20}
+];
+
+// You can take the last value out of the array with 
+NewArray--
+
+// You can also swap elements given their respected positions
+// In the example below, the 0th element will be swapped with the 4th element
+// "data" => false  : BOOLEAN
+// false => "data"  : STRING
+NewArray.Swap(0, 4);
+
+// Pop  left | Pops the first value of the array on the left side
+NewArray.PopL();
+
+// Pop right | Pops the last value on the right side of the array
+NewArray.PopR();
+
+// Reverse | Will reverse the values in the array
+NewArray.Reverse();
+
+// Copy | Copies values from one array to the called array
+set newarr = [
+    "data1",
+    "data2",
+    "data3",
+    "data4"
+];
+
+NewArray.Copy(newarr);
+
+// Length | Will grab the length of the array
+NewArray.Length();
+
+
+// Append | Will append values to the array 
+// similar to PUSH-right
+NewArray.Append("dat34223234a");
+
+// Prepend | Will append values to the array at the beginning of the array
+// similar to PUSH-LEFT
+NewArray.Prepend("beg");
+
+NewArray;

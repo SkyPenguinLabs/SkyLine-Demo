@@ -1,0 +1,42 @@
+!-
+
+Functions in skyline are pretty easy to understand and are pretty simple 
+
+to work with. Like all UNIT ( block statements ) in SkyLine, functions MUST 
+
+end with a semicolon at the end of the UNIT.
+
+Func{...};
+
+    - Functions can take unlimited arguments 
+    - Functions can take any data type as an argument 
+    - Functions can return any data type 
+    - Functions can return via output
+    - Functions can be called with other functions as a result from a function
+    - 'Func' and 'function' are all keywords
+    - ret and return allow you to define return data
+-!
+
+// Subtract data
+set FunctionData := Func(x, y) {
+    return x - y;
+};
+
+println(FunctionData(10, 20))
+
+// use ret to return a hash of data
+set FunctionHashReturn := Func(key, value) {
+    return {key : value}
+};
+
+// this print statement will print the result of the function above 
+// and call the constructed map
+// when working with functions as arguments, semicolons do not need to be added
+println(
+    FunctionHashReturn(
+        "f9",
+        Func() {
+            println("hey you pressed f9!");
+        }
+    )["f9"]()
+);

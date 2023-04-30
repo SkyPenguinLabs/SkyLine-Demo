@@ -1,0 +1,68 @@
+/*
+
+Strings in SkyLine are pretty easy to understand and also read. This demo file 
+
+will show the invoke methods and calls currently supported in Skyline for strings
+
+*/
+
+set Name = "name";
+
+// Length of the string
+println(Name.Length())
+
+// Unlink registry will unlink a standard libraries 
+// functions 
+register("math")
+math.tan(1)
+
+if ("math".UnlinkRegistry()) {
+    println("[+] Math unlinked from library!")
+};
+
+// Integer converts string to an Integer type
+set age = "10";
+age.Integer();
+
+// Boolean converts string to an Boolean type
+set t = "true";
+t.Boolean();
+
+// Float converts string to an Float type
+set f = "1.0";
+
+f.Float()
+
+// Trim will trim at a specific point 
+set CSVS := "name,age,id,username,game";
+
+foreach variable in CSVS.Split(",") {
+    println(variable)
+}
+
+// Upper will make the string uppercase 
+set reg := "regular set";
+println("[+] Reg Upper -> " + reg.Upper())
+
+// Lower will make the string Lowercase
+println("[+] Reg lower -> " + reg.Lower())  
+
+// Title will make the first letter a capital letter
+// in other words returns a copy of the string s with all Unicode letters mapped to their Unicode title case.
+println("[+] Title -> " + reg.Title())
+
+// Methods will return all possible methods for that data type or object 
+// this exists for every data type 
+foreach method in STRING.Methods() {
+    println("[+] STRING method -> " + method)
+};
+
+// View will allow you to view the AST version of the variable or data type
+println(Name.View())
+
+// Ord short for "ordinal" and is a function that returns the Unicode 
+// code point of a character. In the provided code snippet, 
+// the ord method takes the first character of the String object 
+// (Str.Value[0]) and returns its Unicode code point as an Integer object.
+
+println(Name.Ord())
