@@ -1,4 +1,4 @@
-** SLC-E (SkyLine Configuration Engine) Demo source directory **
+## SLC-E (SkyLine Configuration Engine) Demo source directory ##
 
 The SLC otherwise known as SkyLine Configuration Engine is a engine created by the developers of SkyLine 
 
